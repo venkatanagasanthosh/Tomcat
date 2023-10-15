@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My E-Commerce Store</h1>
+        <h1>Yankkart</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
