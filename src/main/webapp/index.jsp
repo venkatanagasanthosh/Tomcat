@@ -3,60 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Commerce Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .login-container h2 {
+            font-style: italic;
+            text-align: center;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-style: italic;
+        }
+
+        .login-form input[type="submit"],
+        .login-form a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-form a {
+            background-color: transparent;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Yankkart</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Clothing</a></li>
-                <li><a href="#">Jewelry</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="products">
-        <h2>Clothing</h2>
-        <div class="product">
-            <img src="clothing1.jpg" alt="Clothing Item 1">
-            <h3>Clothing Item 1</h3>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $49.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="clothing2.jpg" alt="Clothing Item 2">
-            <h3>Clothing Item 2</h3>
-            <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Price: $39.99</p>
-            <button>Add to Cart</button>
-        </div>
-    </section>
-
-    <section id="products">
-        <h2>Jewelry</h2>
-        <div class="product">
-            <img src="jewelry1.jpg" alt="Jewelry Item 1">
-            <h3>Jewelry Item 1</h3>
-            <p>Description: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Price: $79.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="jewelry2.jpg" alt="Jewelry Item 2">
-            <h3>Jewelry Item 2</h3>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $99.99</p>
-            <button>Add to Cart</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 My E-Commerce Store. All rights reserved.</p>
-    </footer>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="your-login-endpoint" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Login">
+            <a href="#">Forgot Password</a>
+        </form>
+        <a href="#">Sign Up</a>
+        <a href="#">Skip Login</a>
+    </div>
 </body>
 </html>
