@@ -9,8 +9,8 @@
             background-color: black;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
             height: 100vh;
             margin: 0;
         }
